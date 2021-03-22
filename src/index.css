@@ -1,13 +1,325 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Almarai', sans-serif !important;
+  background-color: #EDF0F5 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* side image logo */
+
+.register-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: auto;
+  background-color: #6D8A4E;
+}
+
+.register-img img {
+  padding: 0 0 9px 40px;
+  border-bottom: 4px solid #B89E5A;
+}
+
+.register-img p {
+  padding: 20px 0 0 55px;
+  color: #fff;
+}
+
+/* register form */
+
+.register-form {  
+  margin-right: 60px !important;
+  padding: 50px 0;
+}
+
+.register-form h5 {
+  padding-right: 0;
+  color: #6D8A4E;
+}
+
+.register-form hr {
+  height: 5px;
+  color: #362701;
+  width: 50px;
+}
+
+.register-form div {
+  padding-right: 0;
+}
+
+.register-form label {
+  margin: 20px 0 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-select {
+  padding: .375rem 1rem .375rem .75rem !important;
+  color: #798189 !important;
+  background-position: left 0.75rem center !important;
+  font-size: 12px !important;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+.register-btns {
+  margin-top: 25px;
+}
+
+.register-btns .reg-btn {
+  background-color: #634c13;
+  border: 1px solid #634c13;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 150px;
+  margin-top: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.register-btns .reg-btn:hover {
+  background-color: #6D8A4E;
+  border: 1px solid #6D8A4E;
+}
+
+.restrictions-txt, .create-account {
+  margin-top: 20px !important;
+  font-size: 14px;
+  color: #798189;
+}
+
+.restrictions-txt a {
+  text-decoration: none;
+  color: #6D8A4E;
+}
+
+/* login form */
+
+.login-form {
+  padding: 95px 0;
+}
+
+.register-form .welcome-again {
+  font-size: 15px;
+  font-weight: bold;
+  color: #634c13;
+}
+
+.register-form .form-check {
+  margin-top: 13px;
+}
+
+.register-form .form-check .form-check-label {
+  margin-top: 0 !important;
+  margin-right: 25px;
+}
+
+.form-check .form-check-input {
+  float: right !important;
+}
+
+.register-form .forget-pass {
+  margin-top: 17px;
+  font-size: 15px;
+}
+
+.register-form .forget-pass a {
+  text-decoration: none ;
+  color: #6D8A4E;
+}
+
+.create-account a {
+  color: #6D8A4E;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #6D8A4E !important;
+  border-bottom: 1px solid #EDF0F5;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      justify-content: flex-end;
+      margin-top: 50px;
+  }
+}
+
+.navbar .form-control {
+  background-color: #556b3d;
+  border: 1px solid #acacac;
+  border-radius: 20px;
+}
+
+.navbar .form-control::-webkit-input-placeholder  {
+  color: #f9f9f9 !important;
+  opacity: 1;
+}
+
+.navbar .far {
+  margin: 0 10px;
+  padding: 5px;
+  background-color: #fff;
+  color: #B89E5A;
+  border-radius: 50%;
+}
+
+.navbar .dropdown {
+  margin-right: 20px;
+  background-color: #B89E5A;
+  border-radius: 5px;
+}
+
+.navbar .dropdown a {
+  color: #fff !important;
+}
+
+.dropdown-toggle::after {
+  margin-right: 20px;
+}
+
+/* Header */
+
+.header {
+  padding: 30px 0 60px;
+  background-color: #6D8A4E;
+}
+
+.header img {
+  background-color: #EDF0F5;
+  padding: 6px;
+  margin-left: 10px;
+  border-radius: 7px;
+}
+
+.header a {
+  color: #EDF0F5;
+  text-decoration: none;
+}
+
+.header .header-white-space {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* supervisor details */
+
+.supervisor-details {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  bottom: 40px;
+}
+
+.supervisor-details .supervisor-side-counts {
+  background-color: #EDF0F5;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.supervisor-details .supervisor-side-counts .welcome-supervisor {
+  background-color: #6D8A4E;
+  color: #EDF0F5;
+  border-radius: 65px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.supervisor-details .supervisor-side-counts .counts {
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.supervisor-details .supervisor-side-counts .counts span:nth-child(1) {
+  background-color: #fff;
+  color: #B89E5A;
+  padding: 15px;
+  width: 70%;
+}
+
+.supervisor-details .supervisor-side-counts .supervisor-summary-counts .counts span:nth-child(2) {
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+  color: #fff;
+  background-color: #B89E5A;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads {
+  margin-top: 30px;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads .fas {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads > span{
+  background-color: #6D8A4E;
+  padding: 10px;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads .ads-details {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads .ads-details div {
+  background-color: #EDF0F5;
+  font-size: 14px;
+  padding: 10px 5px 5px;
+}
+
+.supervisor-details .supervisor-side-counts .manage-ads .ads-details div p:nth-child(2) {
+  color: #777;
+}
+
+.supervisor-details .supervisor-courses {
+  background-color: #EDF0F5;
+  color: #6d8a4e;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-bottom: 77px;
+}
+
+.supervisor-details .supervisor-courses .course-title {
+  color: #B89E5A;
+}
+
+.supervisor-details .supervisor-courses .round-selection select {
+  background-color: #6d8a4e;
+  border: unset;
+  padding: 10px 13px 11px 25px;
+  color: #fff;
+}
+
+.supervisor-details .supervisor-courses .course-week-number span {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.supervisor-details .supervisor-courses .course-details {
+  background-color: #fff;
+  padding: 20px 5px 5px;
+}
+
+.supervisor-details .supervisor-courses .course-details h5 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.supervisor-details .supervisor-courses .course-details p {
+  color: #B89E5A;
 }
