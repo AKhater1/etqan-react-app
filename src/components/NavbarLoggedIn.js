@@ -10,7 +10,7 @@ function NavbarLoggedIn() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 
                 <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="كلمة البحث..." aria-label="Search" />
+                    <input className="form-control me-2" type="search" placeholder="كلمة البحث..." aria-label="Search" />
                 </form>
 
                 <ul className="navbar-nav mb-2 mb-lg-0">

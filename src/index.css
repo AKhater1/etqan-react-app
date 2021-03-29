@@ -181,6 +181,14 @@ body {
   margin-right: 20px;
 }
 
+.navbar .sign-in-link, .navbar .sign-up-link {
+  color: #fff !important;
+  background-color: #b89e5a;
+  margin-right: 10px;
+  padding: 0.3rem 1rem;  
+  border-radius: 4px;
+}
+
 /* Header */
 
 .header {
@@ -291,7 +299,7 @@ body {
   color: #6d8a4e;
   font-weight: bold;
   border-radius: 10px;
-  padding-bottom: 77px;
+  padding-bottom: 100px;
 }
 
 .supervisor-details .supervisor-courses .course-title {
@@ -322,4 +330,17 @@ body {
 
 .supervisor-details .supervisor-courses .course-details p {
   color: #B89E5A;
+}
+
+/* Supervisor reports */
+
+.supervisor-reports .daily-report {
+  background-color: transparent;
+  border: unset;
+  color: #B89E5A;
+  font-weight: 800;
+}
+
+.supervisor-reports .round-selection select {
+  padding: 10px 30px 11px 5px !important;
 }
