@@ -1,11 +1,10 @@
-// import NavbarLoggedIn from "./NavbarLoggedIn"
-import NavbarLoggedOut from "./NavbarLoggedOut"
+import NavbarLoggedIn from "./NavbarLoggedIn"
 import Header from "./Header"
 
 function FixedHeader() {
     return (
         <>
-            <NavbarLoggedOut />
+            <NavbarLoggedIn />
             <Header />
         </>
     )

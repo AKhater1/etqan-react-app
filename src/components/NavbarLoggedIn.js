@@ -1,4 +1,15 @@
+import {useContext} from "react"
+import StateContext from "../UserContext"
+import {Link} from "react-router-dom"
+
 function NavbarLoggedIn() {
+
+    const setloggedIn = useContext(StateContext)
+
+    function handleLogOut () {
+        setloggedIn(false)
+        localStorage.removeItem("loginToken")
+    }
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -29,7 +40,7 @@ function NavbarLoggedIn() {
                         مرحبا محمد
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#">تسجيل خروج</a></li>
+                        <li><Link onClick={handleLogOut} className="dropdown-item">تسجيل خروج</Link></li>
                     </ul>
                     </li>
                 </ul>

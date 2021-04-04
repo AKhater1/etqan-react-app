@@ -148,13 +148,13 @@ body {
   }
 }
 
-.navbar .form-control {
+input[type=search]{
   background-color: #556b3d;
   border: 1px solid #acacac;
   border-radius: 20px;
 }
 
-.navbar .form-control::-webkit-input-placeholder  {
+input[type=search]::-webkit-input-placeholder  {
   color: #f9f9f9 !important;
   opacity: 1;
 }
@@ -299,7 +299,7 @@ body {
   color: #6d8a4e;
   font-weight: bold;
   border-radius: 10px;
-  padding-bottom: 100px;
+  padding: 0 12px 30px;
 }
 
 .supervisor-details .supervisor-courses .course-title {
@@ -342,5 +342,34 @@ body {
 }
 
 .supervisor-reports .round-selection select {
-  padding: 10px 30px 11px 5px !important;
+  padding: 10px 30px 14px 5px !important;
+}
+
+.supervisor-reports .round-selection select:nth-child(1) {
+  padding: 10px 10px 14px 5px !important;
+}
+
+.supervisor-reports .supervisor-reports-search {
+  margin-top: 30px;
+}
+
+.supervisor-reports .students-report {
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.supervisor-reports .students-report .select-day > * {
+  margin: 5px
+}
+
+.supervisor-reports .students-report .space {
+  background-color: #eee;
+}
+
+.supervisor-reports .students-report .table thead {
+  background-color: #556b3d;
+}
+
+.toast:not(.showing):not(.show) {
+  opacity: 1;
 }

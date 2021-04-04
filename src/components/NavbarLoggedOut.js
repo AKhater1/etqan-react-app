@@ -4,18 +4,17 @@ import Axios from "axios"
 
 function NavbarLoggedOut() {
 
-
-    useEffect(()=>{
-        async function handleSubmit() {
-            try {
-                const response = await Axios.post('https://my.etqaaan.com/api/loginclient', {username: "Admin@etqan", password: "Admin@etqan"})            
-                    console.log(response.data)
-            } catch {
-                console.log("There was a problem.")
-            }
-        }
-        handleSubmit()
-    }, [])
+    // useEffect(()=>{
+    //     async function handleSubmit() {
+    //         try {
+    //             const response = await Axios.post('https://my.etqaaan.com/api/loginclient', {username: "Admin@etqan", password: "Admin@etqan"})            
+    //                 console.log(response.data)
+    //         } catch {
+    //             console.log("There was a problem.")
+    //         }
+    //     }
+    //     handleSubmit()
+    // }, [])
     
 
     return (
